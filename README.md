@@ -22,7 +22,6 @@ The project is implemented in **Python** and continuously updates the data, whic
 - **Python** (for scripting and data handling)
 - **Requests** (for API calls)
 - **Pandas** (for data manipulation and analysis)
-- **Streamlit** (optional, for visualizing data in real-time)
 - **CoinGecko API** (for cryptocurrency data)
 
 ## Prerequisites
@@ -32,8 +31,4 @@ The project is implemented in **Python** and continuously updates the data, whic
   - `requests`
   - `pandas`
   - `time`
-
-You can install the required libraries using `pip`:
-```bash
-pip install requests pandas
 
