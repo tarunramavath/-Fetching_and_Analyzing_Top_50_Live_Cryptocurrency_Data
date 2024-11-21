@@ -31,4 +31,41 @@ The project is implemented in **Python** and continuously updates the data, whic
   - `requests`
   - `pandas`
   - `time`
+## How to Set Up Live Updating Excel Sheet
+
+### Step 1: Fetch Cryptocurrency Data using Python
+
+1. **Clone the Repository**:
+    ```bash
+    git clone https://github.com/yourusername/crypto-live-update-excel.git
+    cd crypto-live-update-excel
+    ```
+
+2. **Run the Python Script**:
+    The Python script fetches live data and saves it to a CSV file (`live_crypto_data.csv`).
+    ```bash
+    python fetch_crypto_data.py
+    ```
+
+    This script fetches data for the top 50 cryptocurrencies and stores it in the CSV file. The script will run continuously, updating the CSV file every 5 minutes.
+
+---
+
+### Step 2: Set Up Power Query in Excel for Live Updates
+
+1. **Open Excel** and create a new workbook.
+2. **Go to the "Data" tab**, click on **"Get Data"**, and select **"From File" > "From Text/CSV"**.
+3. **Select the `live_crypto_data.csv` file** that was created by the Python script.
+4. In the **"Navigator" window**, select the file and click on **"Load"**.
+
+---
+
+### Step 3: Set Auto Refresh
+
+1. **Right-click the data table** and choose **"Table"** > **"External Data Properties"**.
+2. In the **"Connection Properties"** window, set the **refresh interval** to **5 minutes** under the **"Refresh every"** option.
+
+---
+
+Now, Excel will automatically refresh the data every 5 minutes, pulling the updated data from the CSV file, which is being updated by the Python script.
 
