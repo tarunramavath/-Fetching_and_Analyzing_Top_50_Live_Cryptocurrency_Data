@@ -1,4 +1,4 @@
-# -Fetching_and_Analyzing_Top_50_Live_Cryptocurrency_Data
+# Fetching_and_Analyzing_Top_50_Live_Cryptocurrency_Data
 ## Top 50 Cryptocurrency Live Data Fetching
 
 ## Project Overview
